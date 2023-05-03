@@ -74,10 +74,10 @@ export class StandardSQLDialect extends Dialect {
 
   // I think we want an optional list of parameters types that we force a cast to.
   functionInfo: Record<string, FunctionInfo> = {
-    'timestamp_seconds': {
+    timestamp_seconds: {
       returnType: 'timestamp',
     },
-    'concat': {returnType: 'string'},
+    concat: {returnType: 'string'},
   };
 
   quoteTablePath(tablePath: string): string {
